@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+<h1>Login Page</h1>
+
+
+{% load crispy_forms_tags %}
+<form method="post" class="uniForm">{% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" name="sginup_btn">
+</form>
+
+
+
+</body>
+</html>
